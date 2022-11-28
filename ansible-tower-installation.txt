@@ -1,0 +1,26 @@
+ANSIBLE-TOWER INSTALLATION:
+
+ansible package --->https://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-latest.tar.gz
+
+-> wget https://releases.ansible.com/ansible-tower/setup/ansible-tower-setup-latest.tar.gz
+
+-> tar -xvf ansible-tower-setup-latest.tar.gz
+
+-> cd ansible-tower-setup-3.8.6-2
+
+-> vi inventory
+
+[assign password]
+
+    admin_password='admin'
+    pg_password='admin'
+	automationhub_admin_password='admin'
+    automationhub_pg_password='admin'
+
+-> yum install epel-release	
+if it shows subscription register  ->subscription-manager attach --auto--> then install it will get installed
+-> yum install ansible
+                           
+						   
+-> ./setup.sh
+
